@@ -1,7 +1,8 @@
 <li [ngClass]="{'list-group-item':true,
                 'list-group-item-success': loveIts > 0 ,
                  'list-group-item-danger': loveIts < 0 }">
-  <h2>{{title}}</h2>
+
+  <h2 style="font-weight : bold ;"  >{{title}}</h2>
   <div id="date" > <h4 style="font-style:italic;color: gray">{{ created_at | date :'short'  }}</h4></div>
   <p>{{content}}</p>
   <button class="btn btn-success" (click)="loveItMore()">Love it!</button>
